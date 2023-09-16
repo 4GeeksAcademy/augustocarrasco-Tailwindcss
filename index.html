@@ -8,13 +8,14 @@
     <title>Tailwind CSS</title>
 </head>
 <body class="antialiased font-sans bg-gradient-to-r from-green-400 to-blue-500 w-screen h-screen flex justify-center items-center text-sky-100">
-    <div class="w-7/12 h-4/6 bg-sky-950/[0.4] rounded-lg shadow-2xl max-w-lg flex flex-col">
-        <div class="font-medium flex justify-around mt-5">
+    <div class="w-7/12 h-4/6 bg-sky-950/[0.4] rounded-lg shadow-2xl max-w-lg flex flex-col justify-evenly">
+        <div class="font-medium flex justify-around mt-5 h-2/6 mb-5">
             <span>LOGIN</span>
             <span>SIGN UP</span>
         </div>
-        <div class="flex flex-row justify-around w-full h-full max-h-full m-5 content-center items-center relative">
-            <div class="h-5/6 w-2/4 border max-h-96 rounded bg-sky-100 absolute bottom-auto left-14 shadow-2xl z-10 scale-125 flex flex-col items-center content-center justify-evenly">
+        <div class="h-px w-px bg-sky-200 flex m-0 p-0">.</div>
+        <div class="flex flex-row justify-around w-full max-w-full h-4/6 max-h-full content-center items-center relative">
+            <div class="h-5/6 max-h-full w-2/4 border rounded bg-sky-100 absolute bottom-auto left-14 shadow-2xl -z-10 scale-100 flex flex-col items-center content-center justify-evenly">
                 <h6 class=" text-sky-950">Welcome Back!</h6>
                 <form class="w-full max-w-sm flex flex-col justify-center content-center items-center">
                     <div class="flex flex-col items-center content-center justify-center center w-5/6 h-4/6 relative">
@@ -28,18 +29,23 @@
                     <a class ="text-xs absolute left-auto bottom-1 text-teal-900 hover:text-teal-500" href="#">Forgot password?</a>
                 </form>
             </div>
-            <div class="h-5/6 w-2/4 border max-h-96 rounded bg-sky-100 absolute bottom-auto end-14 shadow-2xl">
-                <h6 class=" text-sky-950">Welcome Back!</h6>
-                <form class="w-full max-w-sm flex flex-col justify-center content-center items-center">
-                    <div class="flex flex-col items-center content-center justify-center center w-5/6 h-4/6 relative">
-                        <input class="appearance-none bg-transparent  w-3/4 text-sky-700 mb-8 py-1 px-4 leading-tight text-sm focus:outline-none  border-b border-teal-500  transition ease-in-out delay-0 focus:scale-110  duration-300" type="text" placeholder="Username" aria-label="Full name" requiered>
-                        <input class="appearance-none bg-transparent  w-3/4 text-sky-700  mb-6 py-1 px-4 leading-tight text-sm focus:outline-none   border-b border-teal-500  transition ease-in-out delay-0 focus:scale-110  duration-300" type="password" placeholder="Password" aria-label="Password" requiered>
+            <div class="h-5/6 max-h-full w-2/4 border rounded bg-sky-100 absolute bottom-auto end-14 shadow-2xl z-0 scale-125 flex flex-col items-center content-center justify-evenly">
+                <form class="w-full max-w-sm h-5/6 flex flex-col justify-center content-center items-center">
+                    <div class="flex flex-col items-center content-evenly justify-between center w-5/6 h-5/6 relative">
+                        <h6 class=" text-sky-950">Let's get started!</h6>
+                        <input class="appearance-none bg-transparent  w-3/4 text-sky-700 mb-8-sm py-1 px-4 leading-tight text-sm focus:outline-none  border-b border-teal-500  transition ease-in-out delay-0 focus:scale-110  duration-300" type="text" placeholder="Username" aria-label="Full name" requiered>
+                        <input class="appearance-none bg-transparent  w-3/4 text-sky-700  mb-6-sm py-1 px-4 leading-tight text-sm focus:outline-none   border-b border-teal-500  transition ease-in-out delay-0 focus:scale-110  duration-300" type="password" placeholder="Password" aria-label="Password" requiered>
+                        <input class="appearance-none bg-transparent  w-3/4 text-sky-700  mb-6-sm py-1 px-4 leading-tight text-sm focus:outline-none   border-b border-teal-500  transition ease-in-out delay-0 focus:scale-110  duration-300" type="email" placeholder="E-mail" aria-label="Email" requiered>
+                        <input class="appearance-none bg-transparent  w-3/4 text-sky-700  mb-6-sm py-1 px-4 leading-tight text-sm focus:outline-none   border-b border-teal-500  transition ease-in-out delay-0 focus:scale-110  duration-300" type="tel" placeholder="Phone number" aria-label="Phone number" requiered>
+                        <button class="w-1/2  bg-sky-950 hover:bg-teal-700 focus:bg-teal-700 border-sky-950 hover:border-teal-700 text-sm border-1 text-white py-1 px-2 rounded transition ease-in-out delay-150 focus:scale-110 hover:scale-110 duration-300" type="button">
+                            Sign in
+                        </button>
+                        <div class="flex flex-row">
+                            <input class="appearance-none w-5 h-5 border-2 border-teal-900 rounded-sm bg-teal-800
+                            mt-1 m-3 text-teal-200" type="checkbox" name="TandC" id="TandD">
+                            <span class ="absolut bottom-0 left-auto text-xs text-teal-900">Accept our <a class="text-xs text-teal-900 hover:text-teal-500" href="#">Terms and Conditions</a></span>
+                        </div>
                     </div>
-                    <button class="w-1/2  bg-sky-950 hover:bg-teal-700 focus:bg-teal-700 border-sky-950 hover:border-teal-700 text-sm border-1 text-white py-1 px-2 rounded transition ease-in-out delay-150 focus:scale-110 hover:scale-110 duration-300" type="button">
-                        Log In
-                    </button>
-
-                    <a class ="text-xs absolute left-auto bottom-1 text-teal-900 hover:text-teal-500" href="#">Forgot password?</a>
                 </form>
             </div>
         </div>
